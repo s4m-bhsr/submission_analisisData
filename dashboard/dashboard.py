@@ -5,7 +5,7 @@ import matplotlib.dates as mdates
 import seaborn as sns
 
 # Load dataset hasil cleaning
-day_df = pd.read_csv("/dashboard/cleaned_bike_data.csv")  # Sesuaikan nama file dengan hasil cleaning
+day_df = pd.read_csv("dashboard/cleaned_bike_data.csv")  # Sesuaikan nama file dengan hasil cleaning
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])  # Konversi ke datetime
 
 # Mapping nilai season ke label musim
