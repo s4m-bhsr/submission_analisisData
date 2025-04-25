@@ -1,35 +1,102 @@
-# Submission Dicoding "Belajar Analisis Data dengan Python"
+# 📊 Submission Dicoding — Belajar Analisis Data dengan Python
 
-## Deskripsi
+![Dicoding Badge](https://img.shields.io/badge/Dicoding-Belajar%20Analisis%20Data%20dengan%20Python-blue?style=for-the-badge&logo=python)
+![Streamlit Badge](https://img.shields.io/badge/Built%20with-Streamlit-red?style=for-the-badge&logo=streamlit)
+![Status](https://img.shields.io/badge/Status-Selesai-brightgreen?style=for-the-badge)
 
-Proyek ini bertujuan untuk menganalisis data pada Bike Sharing Dataset. Tujuan akhirnya adalah untuk menghasilkan wawasan dan informasi yang berguna dari data yang dianalisis.
+> Proyek akhir ini disusun untuk memenuhi submission pada course **Belajar Analisis Data dengan Python** oleh [Dicoding Indonesia](https://dicoding.com).  
+> Dataset yang digunakan adalah **Bike Sharing Dataset**, dengan tujuan menghasilkan **insight dan visualisasi interaktif** yang dapat membantu pengambilan keputusan berbasis data.
 
-## Struktur Direktori
+---
 
-- **/data**: Direktori ini berisi data yang digunakan dalam proyek, dalam format .csv .
-- **/dashboard**: Direktori ini berisi main.py yang digunakan untuk membuat dashboard hasil analisis data.
-- **Proyek_Analisis_Data_Samuel.ipynb**: File ini yang digunakan untuk melakukan analisis data.
+## 📝 Deskripsi Proyek
 
-## Instalasi
+🎯 **Tujuan**:  
+Menganalisis perilaku penyewaan sepeda berdasarkan faktor-faktor seperti cuaca, musim, hari kerja, dan waktu.
 
-1. Clone repository ini ke komputer lokal Anda menggunakan perintah berikut:
+🧩 **Output Proyek**:
+- Proses analisis data secara lengkap (EDA, visualisasi, dan interpretasi).
+- Dashboard interaktif menggunakan **Streamlit**.
+- Insight berbasis data untuk menjawab pertanyaan bisnis yang relevan.
 
-   ```shell
+---
+
+## 📁 Struktur Direktori
+
+```
+📦 submission_analisisData
+┣ 📁 data
+┃ ┗ 📄 day.csv, hour.csv
+┣ 📁 dashboard
+┃ ┗ 📄 dashboard.py
+┣ 📄 Proyek_Analisis_Data_Samuel.ipynb
+┣ 📄 requirements.txt
+┗ 📄 README.md
+```
+
+- **/data/**: Berisi dataset yang digunakan (`day.csv` dan `hour.csv`).
+- **/dashboard/**: Berisi aplikasi dashboard berbasis Streamlit.
+- **Proyek_Analisis_Data_Samuel.ipynb**: Notebook utama untuk proses analisis data.
+
+---
+
+## ⚙️ Instalasi dan Setup
+
+1. **Clone repository** ke komputer lokal Anda:
+   ```bash
    git clone https://github.com/s4m-bhsr/submission_analisisData.git
+   cd submission_analisisData
    ```
 
-2. Pastikan Anda memiliki lingkungan Python yang sesuai dan pustaka-pustaka yang diperlukan. Anda dapat menginstal pustaka-pustaka tersebut dengan menjalankan perintah berikut:
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-    ```shell
-    pip install streamlit
-    pip install -r requirements.txt
-    ```
+   Atau jika hanya ingin menjalankan dashboard:
+   ```bash
+   pip install streamlit
+   ```
 
-## Penggunaan
-1. Masuk ke direktori proyek (Local):
+---
 
-    ```shell
-    cd bike-sharing/dashboard/
-    streamlit run dashboard.py
-    ```
-    Atau bisa dengan kunjungi website ini [Project Submission Analisis Data](https://bike-sharing-samuel974.streamlit.app/)
+## 🚀 Menjalankan Dashboard
+
+1. Masuk ke direktori `dashboard`:
+   ```bash
+   cd dashboard
+   ```
+
+2. Jalankan aplikasi Streamlit:
+   ```bash
+   streamlit run dashboard.py
+   ```
+
+✅ Atau cukup kunjungi secara online melalui:  
+🌐 [🔗 Project Submission Analisis Data (Streamlit App)](https://bike-sharing-samuel974.streamlit.app/)
+
+---
+
+## 📊 Insight yang Dihasilkan
+
+Beberapa insight utama dari proyek ini:
+
+- 📅 **Tren musiman** menunjukkan peningkatan penyewaan di musim panas.
+- 👥 **Hari kerja vs akhir pekan** memengaruhi tipe pengguna (registered vs casual).
+- 🌦️ **Cuaca** menjadi salah satu faktor yang cukup signifikan terhadap total penyewaan.
+- ⏰ **Jam sibuk** menunjukkan lonjakan pengguna registered di pagi dan sore hari.
+
+---
+
+## 🛠 Tools & Libraries
+
+| Library           | Fungsi Utama                     |
+|-------------------|----------------------------------|
+| `pandas`          | Manipulasi dan analisis data     |
+| `numpy`           | Operasi numerik dasar            |
+| `matplotlib`      | Visualisasi statis               |
+| `seaborn`         | Visualisasi statistik interaktif |
+| `streamlit`       | Membuat dashboard interaktif     |
+| `datetime`        | Konversi waktu dan tanggal       |
+
+---
